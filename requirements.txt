@@ -1,0 +1,8 @@
+-e kando-python-client-master/
+pandas~=1.0.5
+oauthlib~=3.1.0
+requests~=2.24.0
+redis~=3.5.3
+setuptools~=49.2.0
+numpy~=1.18.5
+tensorflow~=2.2.0
