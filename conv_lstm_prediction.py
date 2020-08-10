@@ -61,9 +61,8 @@ class ConvLSTM:
         CNFG.logger.info(f"Training first sample {df.index[0]}, Training last sample {df.index[-1]}")
         series[series == 0] = np.nan
         series.interpolate(limit_direction='both', inplace=True)
-        split = int(series.shape[0] * 0.85)
-        train_mean = series[:split].mean()
-        train_std = series[:split].std()
+        train_mean = series.mean()
+        train_std = series.std()
         self.train_mean = train_mean
         self.train_std = train_std
         pd.DataFrame({"mean": {0: train_mean}, "std": {0: train_std}}).to_csv(
