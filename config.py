@@ -2,7 +2,7 @@ import logging
 from datetime import datetime
 import sys
 
-APP_PATH = "https://kando-staging.herokuapp.com"
+APP_PATH = "https://fake-app.herokuapp.com"
 BATCH_SIZE = 64
 BUFFER_SIZE = 10000
 HIST_SIZE = 96*2
